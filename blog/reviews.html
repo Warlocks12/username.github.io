@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Отзывы</title>
+</head>
+<body>
+    <header>
+        <h1>Отзывы</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О авторе</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+                <li><a href="reviews.html">Отзывы</a></li> 
+                <li><a href="documentation.html">Документация</a></li>
+                <li><a href="community-rules.html">Правила сообщества</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="reviews">
+            <h2>Отзывы наших гостей</h2>
+
+            <article class="review">
+                <h3>Анна Петрова</h3>
+                <p><strong>Дата:</strong> 15 марта 2023</p>
+                <p><strong>Оценка:</strong> ⭐️⭐️⭐️⭐️⭐️</p>
+                <p>Прекрасное место! Уютные номера и вежливый персонал. Особенно понравился завтрак — разнообразный и вкусный!</p>
+            </article>
+
+            <article class="review">
+                <h3>Сергей Иванов</h3>
+                <p><strong>Дата:</strong> 10 марта 2023</p>
+                <p><strong>Оценка:</strong> ⭐️⭐️⭐️⭐️</p>
+                <p>Хорошая гостиница в центре города. Удобное местоположение, но немного шумно ночью.</p>
+            </article>
+
+            <article class="review">
+                <h3>Ольга Смирнова</h3>
+                <p><strong>Дата:</strong> 5 марта 2023</p>
+                <p><strong>Оценка:</strong> ⭐️⭐️⭐️⭐️⭐️</p>
+                <p>Отличный сервис и чистота на высшем уровне! Обязательно вернусь снова.</p>
+            </article>
+
+            <section class="leave-review">
+                <h2>Оставьте свой отзыв</h2>
+                <form action="#" method="post">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="date">Дата:</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="rating">Оценка:</label>
+                    <select id="rating" name="rating" required>
+                        <option value="5">⭐️⭐️⭐️⭐️⭐️</option>
+                        <option value="4">⭐️⭐️⭐️⭐️</option>
+                        <option value="3">⭐️⭐️⭐️</option>
+                        <option value="2">⭐️⭐️</option>
+                        <option value="1">⭐️</option>
+                    </select>
+
+                    <label for="review-text">Ваш отзыв:</label>
+                    <textarea id="review-text" name="review-text" rows="4" required></textarea>
+
+                    <button type="submit">Отправить</button>
+                </form>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Альпийский Блог. Все права защищены.</p>
+    </footer>
+</body>
+</html>
